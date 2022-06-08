@@ -1,4 +1,4 @@
-# B-O-Software
+# Bang & Olufsen Software Central Repository
 <div id="top"></div>
 
 <!-- TABLE OF CONTENTS -->
@@ -7,13 +7,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -46,6 +39,8 @@ Don't forget to give the project a star! Thanks again!
 Dave (TheRetroBristolian) - dave@theretrobristolian.co.uk
 
 YouTube Channel: [https://www.youtube.com/channel/UC4hTU9X6SDvoD0aUuacYA4w](https://www.youtube.com/channel/UC4hTU9X6SDvoD0aUuacYA4w)
+
+
 Archive.org: [https://archive.org/details/@the_retro_bristolian](https://archive.org/details/@the_retro_bristolian)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
