@@ -19,16 +19,17 @@ Source: https://archivedforum.beoworld.org/forums/t/24191.aspx
 
 ### VTR_458X_UIP_V1.2
 Device used to backup: TL866II Plus  
-Original device type number:  
-Original device serial number:  
-Original ROM part number:  
-ROM Chip part: TMS27C512  
+Original device type number: 4583  
+Original device serial number: 09XXXXXX  
+Original ROM part number: 8341982  
+ROM Chip part: TMS JL 27C512-20 BLUE9227000 (TMS27C512)  
 
 ### VTR_458X_UIP_V2.3
 Device used to backup: TL866II Plus  
-Original device type number:  
-Original device serial number:  
-Original ROM part number:  
+Original device type number: 4583  
+Original device serial number: 10XXXXXX  
+Original ROM part number: 8342605  
+ROM chip part: ST M27C512-20FI B88AI 9435C (M27C512)  
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
