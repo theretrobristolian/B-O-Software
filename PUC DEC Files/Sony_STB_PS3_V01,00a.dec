@@ -1,0 +1,1199 @@
+[Version]
+Date=17-11-07
+Time=23:55:40
+Person=BKF
+[General]
+GeneralIRDesc=GlobalManual
+PassVBI=1
+AlwaysOn=1
+IRTimeout=700
+Descriptor=Sony Playstation 3  
+NumSignalReps=0
+Comment=
+Version=01,00a
+BitsPerPixel=1
+[States]
+NumStates=7
+State1=Idle
+Comment1=Waiting
+State2=GoingOn
+Comment2=GoingOn
+State3=On
+Comment3=On
+State4=GoExt
+Comment4=GoExt
+State5=GoExt2
+Comment5=GoExt2
+State6=Continue
+Comment6=-
+State7=Beo5
+Comment7=
+[0-Idle]
+Commands=4864
+Timeout=30
+NewState=GoingOn
+[1-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[2-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[3-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[4-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[5-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[6-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[7-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[8-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[9-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[up-Idle]
+Commands=4096
+[down-Idle]
+Timeout=0
+Commands=4096
+[rewind-Idle]
+Timeout=0
+Commands=4096
+[wind-Idle]
+Timeout=0
+Commands=4096
+[play(go)-Idle]
+Timeout=0
+Commands=4096
+[stop-Idle]
+Timeout=0
+Commands=4096
+[exit-Idle]
+Timeout=0
+Commands=4096
+[shift+1-Idle]
+Timeout=0
+Commands=4096
+[shift+2-Idle]
+Timeout=0
+Commands=4096
+[shift+3-Idle]
+Timeout=0
+Commands=4096
+[shift+4-Idle]
+Timeout=0
+Commands=4096
+[shift+5-Idle]
+Timeout=0
+Commands=0
+[shift+6-Idle]
+Timeout=0
+Commands=0
+[shift+7-Idle]
+Timeout=0
+Commands=0
+[shift+8-Idle]
+Timeout=0
+Commands=0
+[shift+9-Idle]
+Timeout=0
+Commands=0
+[cue_forw-Idle]
+Timeout=0
+Commands=4096
+[cue_backw-Idle]
+Timeout=0
+Commands=4096
+[slow_forw-Idle]
+Timeout=0
+Commands=4096
+[slow_backw-Idle]
+Timeout=0
+Commands=4096
+[sat(on)-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[sense_on-Idle]
+NewState=On
+[timeout-GoingOn]
+Commands=24576
+NewState=On
+[0-GoingOn]
+Commands=20480
+[1-GoingOn]
+Timeout=0
+Commands=20480
+[2-GoingOn]
+Timeout=0
+Commands=20480
+[3-GoingOn]
+Timeout=0
+Commands=20480
+[4-GoingOn]
+Timeout=0
+Commands=20480
+[5-GoingOn]
+Timeout=0
+Commands=20480
+[6-GoingOn]
+Timeout=0
+Commands=20480
+[7-GoingOn]
+Timeout=0
+Commands=20480
+[8-GoingOn]
+Timeout=0
+Commands=20480
+[9-GoingOn]
+Timeout=0
+Commands=20480
+[standby-GoingOn]
+Commands=18192
+NewState=Idle
+[up-GoingOn]
+Timeout=0
+Commands=4096
+[down-GoingOn]
+Timeout=0
+Commands=4096
+[rewind-GoingOn]
+Timeout=0
+Commands=4096
+[wind-GoingOn]
+Timeout=0
+Commands=4096
+[play(go)-GoingOn]
+Timeout=0
+Commands=4096
+[stop-GoingOn]
+Timeout=0
+Commands=4096
+[exit-GoingOn]
+Timeout=0
+Commands=4096
+[shift+1-GoingOn]
+Timeout=0
+Commands=4096
+[shift+2-GoingOn]
+Timeout=0
+Commands=4096
+[shift+3-GoingOn]
+Timeout=0
+Commands=4096
+[shift+4-GoingOn]
+Timeout=0
+Commands=4096
+[shift+5-GoingOn]
+Timeout=0
+Commands=0
+[shift+6-GoingOn]
+Timeout=0
+Commands=0
+[shift+7-GoingOn]
+Timeout=0
+Commands=0
+[shift+8-GoingOn]
+Timeout=0
+Commands=0
+[shift+9-GoingOn]
+Timeout=0
+Commands=0
+[cue_forw-GoingOn]
+Timeout=0
+Commands=4096
+[cue_backw-GoingOn]
+Timeout=0
+Commands=4096
+[slow_forw-GoingOn]
+Timeout=0
+Commands=4096
+[slow_backw-GoingOn]
+Timeout=0
+Commands=4096
+[sense_off-GoingOn]
+Commands=18176
+NewState=Idle
+[0-On]
+Commands=4096
+[1-On]
+Timeout=0
+Commands=4096
+[2-On]
+Timeout=0
+Commands=4096
+[3-On]
+Timeout=0
+Commands=4096
+[4-On]
+Timeout=0
+Commands=4096
+[5-On]
+Timeout=0
+Commands=4096
+[6-On]
+Timeout=0
+Commands=4096
+[7-On]
+Timeout=0
+Commands=4096
+[8-On]
+Timeout=0
+Commands=4096
+[9-On]
+Timeout=0
+Commands=4096
+[standby-On]
+Timeout=0
+Commands=4096
+NewState=Idle
+[key_release-On]
+Commands=36864
+[up-On]
+Timeout=0
+Commands=4096
+[down-On]
+Timeout=0
+Commands=4096
+[rewind-On]
+Timeout=0
+Commands=4096
+[wind-On]
+Timeout=0
+Commands=4096
+[play(go)-On]
+Timeout=20
+Commands=12288
+NewState=GoExt
+[stop-On]
+Timeout=15
+Commands=4864
+[cont_rewind-On]
+Commands=32768
+[cont_wind-On]
+Timeout=0
+Commands=32768
+[cont_up-On]
+Timeout=0
+Commands=32768
+[cont_down-On]
+Timeout=0
+Commands=32768
+[continue-On]
+Timeout=0
+Commands=32768
+[exit-On]
+Timeout=0
+Commands=4096
+[shift+1-On]
+Timeout=0
+Commands=4096
+[shift+2-On]
+Timeout=0
+Commands=4096
+[shift+3-On]
+Timeout=0
+Commands=4096
+[shift+4-On]
+Timeout=0
+Commands=4096
+[shift+5-On]
+Timeout=0
+Commands=0
+[shift+6-On]
+Timeout=0
+Commands=0
+[shift+7-On]
+Timeout=0
+Commands=0
+[shift+8-On]
+Timeout=0
+Commands=0
+[shift+9-On]
+Timeout=0
+Commands=0
+[cue_forw-On]
+Timeout=0
+Commands=4096
+[cue_backw-On]
+Timeout=0
+Commands=4096
+[slow_forw-On]
+Timeout=0
+Commands=4096
+[slow_backw-On]
+Timeout=0
+Commands=4096
+[sense_off-On]
+NewState=Idle
+[timeout-GoExt]
+NewState=On
+Commands=8192
+AlienID1=ENTER
+[1-GoExt]
+Commands=16896
+NewState=On
+AlienID1=Start
+[2-GoExt]
+Timeout=0
+Commands=16896
+NewState=On
+AlienID1=Display
+[3-GoExt]
+Timeout=0
+Commands=16896
+NewState=On
+AlienID1=TopMenu
+[4-GoExt]
+Timeout=0
+Commands=16896
+NewState=On
+AlienID1=Select
+[5-GoExt]
+Timeout=0
+Commands=0
+NewState=-
+[6-GoExt]
+Timeout=0
+Commands=0
+NewState=-
+[7-GoExt]
+Timeout=0
+Commands=0
+NewState=-
+[8-GoExt]
+Timeout=0
+Commands=0
+NewState=-
+[play(go)-GoExt]
+Commands=16896
+NewState=On
+AlienID1=PlayPause
+[stop-GoExt]
+Timeout=0
+Commands=0
+NewState=On
+[exit-GoExt]
+Timeout=0
+Commands=16640
+NewState=On
+[timeout-GoExt2]
+NewState=On
+[timeout-Continue]
+NewState=On
+Commands=8192
+AlienID1=TopMenu
+[continue-GoExt]
+Commands=17152
+Timeout=15
+NewState=Continue
+[key_release-Continue]
+Commands=17152
+Timeout=20
+NewState=GoExt
+[sense_off-GoExt]
+Commands=16384
+NewState=Idle
+[sense_off-GoExt2]
+Timeout=0
+Commands=16384
+NewState=Idle
+[sense_off-Continue]
+Timeout=0
+Commands=16384
+NewState=Idle
+[AlienSignals]
+NumStates=25
+Signal1=L1
+Signal2=L2
+Signal3=L3
+Signal4=Select
+Signal5=Start
+Signal6=R1
+Signal7=R2
+Signal8=R3
+Signal9=Options
+Signal10=Back
+Signal11=View
+Signal12=X
+Signal13=Up
+Signal14=Down
+Signal15=Left
+Signal16=Right
+Signal17=Display
+Signal18=TopMenu
+Signal19=Rew
+Signal20=PlayPause
+Signal21=FF
+Signal22=Prev
+Signal23=Stop
+Signal24=Next
+Signal25=ENTER
+[Signal_L1_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=540 540 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9032
+PRESIGNALLO=2266
+BITS=1
+[Signal_L1]
+IRSEQUENCE=NEC
+Pause1=42348
+Pause2=96530
+Carrier=38
+BITLEN=563 573 1710
+PRESIGNALBITS=0 0
+PRESIGNALHI=9024
+PRESIGNALLO=4516
+BITS=111111111001000000111101110000101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF903DC2
+[Signal_L2_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=540 540 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9032
+PRESIGNALLO=2266
+BITS=1
+[Signal_L2]
+IRSEQUENCE=NEC
+Pause1=42348
+Pause2=96530
+Carrier=38
+BITLEN=566 571 1710
+PRESIGNALBITS=0 0
+PRESIGNALHI=9024
+PRESIGNALLO=4516
+BITS=111111111001000000011101111000101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF901DE2
+[Signal_L3_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=538 538 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9029
+PRESIGNALLO=2268
+BITS=1
+[Signal_L3]
+IRSEQUENCE=NEC
+Pause1=42350
+Pause2=96530
+Carrier=38
+BITLEN=563 573 1713
+PRESIGNALBITS=0 0
+PRESIGNALHI=9024
+PRESIGNALLO=4518
+BITS=111111111001000000101101110100101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF902DD2
+[Signal_Select_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=538 538 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9006
+PRESIGNALLO=2294
+BITS=1
+[Signal_Select]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96530
+Carrier=38
+BITLEN=540 596 1710
+PRESIGNALBITS=0 0
+PRESIGNALHI=8998
+PRESIGNALLO=4541
+BITS=111111111001000010011101011000101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF909D62
+[Signal_Start_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=538 538 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9006
+PRESIGNALLO=2291
+BITS=1
+[Signal_Start]
+IRSEQUENCE=NEC
+Pause1=42348
+Pause2=96532
+Carrier=38
+BITLEN=538 599 1710
+PRESIGNALBITS=0 0
+PRESIGNALHI=9001
+PRESIGNALLO=4541
+BITS=111111111001000010101101010100101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF90AD52
+[Signal_R1_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=538 538 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9006
+PRESIGNALLO=2294
+BITS=1
+[Signal_R1]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96530
+Carrier=38
+BITLEN=540 596 1710
+PRESIGNALBITS=0 0
+PRESIGNALHI=9001
+PRESIGNALLO=4541
+BITS=111111111001000001111101100000101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF907D82
+[Signal_R2_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=540 540 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9006
+PRESIGNALLO=2291
+BITS=1
+[Signal_R2]
+IRSEQUENCE=NEC
+Pause1=42348
+Pause2=96530
+Carrier=38
+BITLEN=540 599 1710
+PRESIGNALBITS=0 0
+PRESIGNALHI=9001
+PRESIGNALLO=4539
+BITS=111111111001000001011101101000101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF905DA2
+[Signal_R3_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=538 538 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9004
+PRESIGNALLO=2294
+BITS=1
+[Signal_R3]
+IRSEQUENCE=NEC
+Pause1=42350
+Pause2=96532
+Carrier=38
+BITLEN=538 599 1713
+PRESIGNALBITS=0 0
+PRESIGNALHI=8996
+PRESIGNALLO=4544
+BITS=111111111001000001101101100100101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF906D92
+[Signal_Options_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=540 540 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9006
+PRESIGNALLO=2291
+BITS=1
+[Signal_Options]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96530
+Carrier=38
+BITLEN=540 599 1710
+PRESIGNALBITS=0 0
+PRESIGNALHI=9001
+PRESIGNALLO=4539
+BITS=111111111001000000001101111100101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF900DF2
+[Signal_Back_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=543 543 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9034
+PRESIGNALLO=2263
+BITS=1
+[Signal_Back]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96527
+Carrier=38
+BITLEN=568 568 1708
+PRESIGNALBITS=0 0
+PRESIGNALHI=9029
+PRESIGNALLO=4513
+BITS=111111111001000001001101101100101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF904DB2
+[Signal_View_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=540 540 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9032
+PRESIGNALLO=2266
+BITS=1
+[Signal_View]
+IRSEQUENCE=NEC
+Pause1=42348
+Pause2=96532
+Carrier=38
+BITLEN=566 571 1708
+PRESIGNALBITS=0 0
+PRESIGNALHI=9027
+PRESIGNALLO=4513
+BITS=111111111001000000010101111010101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF9015EA
+[Signal_X_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=540 540 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9034
+PRESIGNALLO=2263
+BITS=1
+[Signal_X]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96530
+Carrier=38
+BITLEN=568 568 1708
+PRESIGNALBITS=0 0
+PRESIGNALHI=9027
+PRESIGNALLO=4513
+BITS=111111111001000001010101101010101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF9055AA
+[Signal_Up_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=540 540 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9034
+PRESIGNALLO=2263
+BITS=1
+[Signal_Up]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96530
+Carrier=38
+BITLEN=568 568 1708
+PRESIGNALBITS=0 0
+PRESIGNALHI=9027
+PRESIGNALLO=4513
+BITS=111111111001000010001101011100101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF908D72
+[Signal_Down_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=543 543 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9034
+PRESIGNALLO=2263
+BITS=1
+[Signal_Down]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96530
+Carrier=38
+BITLEN=568 568 1708
+PRESIGNALBITS=0 0
+PRESIGNALHI=9027
+PRESIGNALLO=4513
+BITS=111111111001000010010101011010101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF90956A
+[Signal_Left_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=543 543 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9034
+PRESIGNALLO=2263
+BITS=1
+[Signal_Left]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96530
+Carrier=38
+BITLEN=568 571 1710
+PRESIGNALBITS=0 0
+PRESIGNALHI=9027
+PRESIGNALLO=4513
+BITS=111111111001000000110101110010101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF9035CA
+[Signal_Right_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=543 543 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9032
+PRESIGNALLO=2263
+BITS=1
+[Signal_Right]
+IRSEQUENCE=NEC
+Pause1=42348
+Pause2=96530
+Carrier=38
+BITLEN=566 571 1710
+PRESIGNALBITS=0 0
+PRESIGNALHI=9027
+PRESIGNALLO=4516
+BITS=111111111001000001110101100010101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF90758A
+[Signal_Display_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=566 566 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9006
+PRESIGNALLO=2266
+BITS=1
+[Signal_Display]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96530
+Carrier=38
+BITLEN=540 571 1708
+PRESIGNALBITS=0 0
+PRESIGNALHI=9001
+PRESIGNALLO=4539
+BITS=111111111001000011111101000000101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF90FD02
+[Signal_TopMenu_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=566 566 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9006
+PRESIGNALLO=2266
+BITS=1
+[Signal_TopMenu]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96530
+Carrier=38
+BITLEN=540 571 1708
+PRESIGNALBITS=0 0
+PRESIGNALHI=9001
+PRESIGNALLO=4539
+BITS=111111111001000011011101001000101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF90DD22
+[Signal_Rew_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=568 568 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9009
+PRESIGNALLO=2263
+BITS=1
+[Signal_Rew]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96530
+Carrier=38
+BITLEN=543 571 1710
+PRESIGNALBITS=0 0
+PRESIGNALHI=9004
+PRESIGNALLO=4539
+BITS=111111111001000000100101110110101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF9025DA
+[Signal_PlayPause_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=566 566 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9006
+PRESIGNALLO=2266
+BITS=1
+[Signal_PlayPause]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96530
+Carrier=38
+BITLEN=543 568 1708
+PRESIGNALBITS=0 0
+PRESIGNALHI=9001
+PRESIGNALLO=4539
+BITS=111111111001000010100101010110101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF90A55A
+[Signal_FF_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=566 566 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9006
+PRESIGNALLO=2266
+BITS=1
+[Signal_FF]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96532
+Carrier=38
+BITLEN=540 571 1708
+PRESIGNALBITS=0 0
+PRESIGNALHI=9001
+PRESIGNALLO=4539
+BITS=111111111001000001100101100110101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF90659A
+[Signal_Prev_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=566 566 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9006
+PRESIGNALLO=2266
+BITS=1
+[Signal_Prev]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96532
+Carrier=38
+BITLEN=540 573 1708
+PRESIGNALBITS=0 0
+PRESIGNALHI=9001
+PRESIGNALLO=4539
+BITS=111111111001000000000101111110101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF9005FA
+[Signal_Stop_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=566 566 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9006
+PRESIGNALLO=2266
+BITS=1
+[Signal_Stop]
+IRSEQUENCE=NEC
+Pause1=42345
+Pause2=96530
+Carrier=38
+BITLEN=540 571 1708
+PRESIGNALBITS=0 0
+PRESIGNALHI=9001
+PRESIGNALLO=4539
+BITS=111111111001000010000101011110101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF90857A
+[Signal_Next_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=566 566 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9006
+PRESIGNALLO=2266
+BITS=1
+[Signal_Next]
+IRSEQUENCE=NEC
+Pause1=42348
+Pause2=96530
+Carrier=38
+BITLEN=540 571 1710
+PRESIGNALBITS=0 0
+PRESIGNALHI=9001
+PRESIGNALLO=4541
+BITS=111111111001000001000101101110101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF9045BA
+[Associations]
+BeoButton1=1
+AlienButton1=L1
+LineSpacing1=2
+BeoButton2=2
+AlienButton2=L2
+LineSpacing2=2
+BeoButton3=3
+AlienButton3=L3
+LineSpacing3=2
+BeoButton4=4
+AlienButton4=R1
+LineSpacing4=2
+BeoButton5=5
+AlienButton5=R2
+LineSpacing5=2
+BeoButton6=6
+AlienButton6=R3
+LineSpacing6=2
+BeoButton7=standby
+LineSpacing7=2
+BeoButton8=up
+AlienButton8=Up
+LineSpacing8=2
+BeoButton9=down
+AlienButton9=Down
+LineSpacing9=2
+BeoButton10=rewind
+AlienButton10=Left
+LineSpacing10=2
+BeoButton11=wind
+AlienButton11=Right
+LineSpacing11=2
+BeoButton12=play(go)
+AlienButton12=ENTER
+LineSpacing12=2
+BeoButton13=stop
+AlienButton13=Stop
+LineSpacing13=2
+BeoButton14=cont_rewind
+AlienButton14=Left
+LineSpacing14=2
+BeoButton15=cont_wind
+AlienButton15=Right
+LineSpacing15=2
+BeoButton16=cont_up
+AlienButton16=Up
+LineSpacing16=2
+BeoButton17=cont_down
+AlienButton17=Down
+LineSpacing17=2
+BeoButton18=continue
+AlienButton18=ENTER
+LineSpacing18=2
+BeoButton19=exit
+AlienButton19=Stop
+LineSpacing19=2
+BeoButton20=shift+1
+AlienButton20=Start
+LineSpacing20=2
+Text20=START
+BeoButton21=shift+2
+AlienButton21=Display
+LineSpacing21=2
+Text21=DISPLAY
+BeoButton22=shift+3
+AlienButton22=TopMenu
+LineSpacing22=2
+Text22=TOP MENU
+BeoButton23=shift+4
+AlienButton23=Select
+LineSpacing23=2
+Text23=SELECT
+BeoButton24=cue_forw
+AlienButton24=Back
+LineSpacing24=2
+Text24=BACK
+BeoButton25=cue_backw
+AlienButton25=Options
+LineSpacing25=2
+Text25=OPTIONS
+BeoButton26=slow_forw
+AlienButton26=X
+LineSpacing26=2
+Text26=X
+BeoButton27=slow_backw
+AlienButton27=View
+LineSpacing27=2
+Text27=VIEW
+[Signal_ENTER_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=563 563 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9004
+PRESIGNALLO=2268
+BITS=1
+[Signal_ENTER]
+IRSEQUENCE=NEC
+Pause1=42348
+Pause2=96532
+Carrier=38
+BITLEN=538 573 1710
+PRESIGNALBITS=0 0
+PRESIGNALHI=8998
+PRESIGNALLO=4541
+BITS=111111111001000010110101010010101
+REPEATSIGNAL=1
+Comment=NEC 32bits=FF90B54A
+[GeneralIRDesc]
+IRSEQUENCE=NEC
+Pause1=42348
+Pause2=96532
+Carrier=38
+BITLEN=538 573 1710
+PRESIGNALBITS=0 0
+PRESIGNALHI=8998
+PRESIGNALLO=4541
+BITS=111111111001000000111101110000101
+[GeneralIRDesc_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=540 540 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9032
+PRESIGNALLO=2266
+BITS=1
+[up-GoExt]
+Commands=16944
+Timeout=15
+NewState=GoExt2
+AlienID1=Next
+[down-GoExt]
+Timeout=15
+Commands=16944
+NewState=GoExt2
+AlienID1=Prev
+[rewind-GoExt]
+Timeout=15
+Commands=16944
+NewState=GoExt2
+AlienID1=Rew
+[wind-GoExt]
+Timeout=15
+Commands=16944
+NewState=GoExt2
+AlienID1=FF
+[up-GoExt2]
+Timeout=15
+Commands=16944
+AlienID1=Next
+[down-GoExt2]
+Timeout=15
+Commands=16944
+AlienID1=Prev
+[rewind-GoExt2]
+Timeout=15
+Commands=16944
+AlienID1=Rew
+[wind-GoExt2]
+Timeout=15
+Commands=16944
+AlienID1=FF
+[shift+0-Idle]
+Timeout=10
+Commands=12288
+NewState=Beo5
+[timeout-Beo5]
+NewState=On
+[up-Beo5]
+Timeout=15
+Commands=16896
+AlienID1=Next
+NewState=On
+[down-Beo5]
+Timeout=15
+Commands=16896
+AlienID1=Prev
+NewState=On
+[rewind-Beo5]
+Timeout=15
+Commands=16896
+AlienID1=Rew
+NewState=On
+[wind-Beo5]
+Timeout=15
+Commands=16896
+AlienID1=FF
+NewState=On
+[play(go)-Beo5]
+NewState=On
+Commands=16896
+AlienID1=ENTER
+[sense_off-Beo5]
+NewState=Idle
+[shift+0-GoingOn]
+Timeout=10
+Commands=12288
+NewState=Beo5
+[shift+0-On]
+Timeout=10
+Commands=12288
+NewState=Beo5
+[shift+0-GoExt]
+NewState=Beo5
+Timeout=10
+Commands=12288
+[shift+0-GoExt2]
+NewState=Beo5
+Timeout=10
+Commands=12288
+[shift+0-Continue]
+Timeout=10
+Commands=12288
+NewState=Beo5
+[shift+0-Beo5]
+Timeout=10
+Commands=12288
+NewState=Beo5

@@ -1,0 +1,389 @@
+[Version]
+Date=11-12-09
+Time=09:37:18
+Person=BKF
+[General]
+GeneralIRDesc=GlobalManual
+PassVBI=1
+IRTimeout=950
+Descriptor=Apple Remote
+NumSignalReps=0
+Comment=    
+Version=01,20a
+BitsPerPixel=1
+[AlienSignals]
+NumStates=7
+Signal1=Plus
+Signal2=Minus
+Signal3=SkipLeft
+Signal4=SkipRight
+Signal5=Menu
+Signal6=PlayPause
+Signal7=Genius
+[Associations]
+BeoButton1=play(go)
+AlienButton1=PlayPause
+LineSpacing1=2
+BeoButton2=up
+AlienButton2=Plus
+LineSpacing2=2
+BeoButton3=down
+AlienButton3=Minus
+LineSpacing3=2
+BeoButton4=rewind
+AlienButton4=SkipLeft
+LineSpacing4=2
+BeoButton5=wind
+AlienButton5=SkipRight
+LineSpacing5=2
+BeoButton6=stop
+AlienButton6=PlayPause
+LineSpacing6=2
+BeoButton7=exit
+AlienButton7=Menu
+LineSpacing7=2
+BeoButton9=cont_rewind
+AlienButton9=SkipLeft
+LineSpacing9=2
+BeoButton10=cont_wind
+AlienButton10=SkipRight
+LineSpacing10=2
+BeoButton11=cont_up
+AlienButton11=Plus
+LineSpacing11=2
+BeoButton12=cont_down
+AlienButton12=Minus
+LineSpacing12=2
+BeoButton13=slow_forw
+LineSpacing13=2
+BeoButton8=slow_backw
+LineSpacing8=2
+BeoButton14=7
+LineSpacing14=2
+BeoButton15=9
+LineSpacing15=2
+BeoButton16=continue
+LineSpacing16=2
+BeoButton18=sat(on)
+AlienButton18=PlayPause
+LineSpacing18=2
+BeoButton19=standby
+AlienButton19=Menu
+LineSpacing19=2
+BeoButton17=1
+LineSpacing17=2
+BeoButton20=timeout
+AlienButton20=PlayPause
+LineSpacing20=2
+BeoButton21=0
+LineSpacing21=2
+BeoButton22=sense_on
+LineSpacing22=2
+[States]
+NumStates=4
+State1=Idle
+Comment1=Waiting
+State2=home
+Comment2=
+State3=poweroff
+Comment3=
+State4=ON
+Comment4=
+[up-Idle]
+Commands=20480
+Timeout=0
+[down-Idle]
+Timeout=0
+Commands=20480
+[rewind-Idle]
+Timeout=0
+Commands=20480
+[wind-Idle]
+Timeout=0
+Commands=20480
+[play(go)-Idle]
+Timeout=0
+Commands=32768
+[stop-Idle]
+Timeout=0
+Commands=4096
+[exit-Idle]
+Timeout=
+Commands=4096
+AlienID1=
+AlienID2=
+[Signal_Plus_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=563 563 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9029
+PRESIGNALLO=2273
+BITS=1
+[Signal_Plus]
+IRSEQUENCE=NEC
+Pause1=39798
+Pause2=96579
+Carrier=38
+BITLEN=563 602 1720
+PRESIGNALBITS=0 0
+PRESIGNALHI=9024
+PRESIGNALLO=4557
+BITS=100010000001111000101111011110111
+REPEATSIGNAL=1
+Comment=NEC 32bits=881E2F7B
+[Signal_Minus_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=563 563 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9029
+PRESIGNALLO=2271
+BITS=1
+[Signal_Minus]
+IRSEQUENCE=NEC
+Pause1=39790
+Pause2=96576
+Carrier=38
+BITLEN=566 599 1720
+PRESIGNALBITS=0 0
+PRESIGNALHI=9024
+PRESIGNALLO=4554
+BITS=100010000001111001001111011110111
+REPEATSIGNAL=1
+Comment=NEC 32bits=881E4F7B
+[Signal_SkipLeft_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=563 563 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9029
+PRESIGNALLO=2273
+BITS=1
+[Signal_SkipLeft]
+IRSEQUENCE=NEC
+Pause1=42043
+Pause2=96596
+Carrier=38
+BITLEN=566 599 1720
+PRESIGNALBITS=0 0
+PRESIGNALHI=9024
+PRESIGNALLO=4554
+BITS=100010000001111011101111011110111
+REPEATSIGNAL=1
+Comment=NEC 32bits=881EEF7B
+[Signal_SkipRight_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=563 563 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9029
+PRESIGNALLO=2273
+BITS=1
+[Signal_SkipRight]
+IRSEQUENCE=NEC
+Pause1=39795
+Pause2=96568
+Carrier=38
+BITLEN=566 599 1720
+PRESIGNALBITS=0 0
+PRESIGNALHI=9024
+PRESIGNALLO=4552
+BITS=100010000001111000011111011110111
+REPEATSIGNAL=1
+Comment=NEC 32bits=881E1F7B
+[Signal_Menu_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=563 563 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9027
+PRESIGNALLO=2273
+BITS=1
+[Signal_Menu]
+IRSEQUENCE=NEC
+Pause1=42040
+Pause2=96558
+Carrier=38
+BITLEN=563 602 1723
+PRESIGNALBITS=0 0
+PRESIGNALHI=9027
+PRESIGNALLO=4554
+BITS=100010000001111010111111011110111
+REPEATSIGNAL=1
+Comment=NEC 32bits=881EBF7B
+[Signal_PlayPause_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=563 563 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9029
+PRESIGNALLO=2271
+BITS=1
+[Signal_PlayPause]
+IRSEQUENCE=NEC
+Pause1=42043
+Pause2=96558
+Carrier=38
+BITLEN=566 599 1720
+PRESIGNALBITS=0 0
+PRESIGNALHI=9024
+PRESIGNALLO=4554
+BITS=100010000001111011011111011110111
+REPEATSIGNAL=1
+Comment=NEC 32bits=881EDF7B
+[cont_rewind-Idle]
+Commands=30720
+[cont_wind-Idle]
+Timeout=0
+Commands=30720
+[cont_up-Idle]
+Timeout=0
+Commands=30720
+[cont_down-Idle]
+Timeout=0
+Commands=30720
+[continue-Idle]
+Commands=0
+Timeout=
+AlienID1=
+AlienID2=
+[key_release-Idle]
+Commands=26880
+[slow_backw-Idle]
+Commands=0
+Timeout=0
+[slow_forw-Idle]
+Timeout=0
+Commands=0
+[7-Idle]
+Timeout=0
+Commands=0
+[9-Idle]
+Timeout=0
+Commands=0
+[Signal_Genius_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=568 568 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9062
+PRESIGNALLO=2278
+BITS=1
+[Signal_Genius]
+IRSEQUENCE=NEC
+Pause1=37678
+Pause2=96881
+Carrier=38
+BITLEN=568 602 1725
+PRESIGNALBITS=0 0
+PRESIGNALHI=9056
+PRESIGNALLO=4567
+BITS=000000000000000000000000000000000
+REPEATSIGNAL=2
+Comment=NEC 32bits=00000000
+[GeneralIRDesc]
+IRSEQUENCE=NEC
+Pause1=39798
+Pause2=96579
+Carrier=38
+BITLEN=563 602 1720
+PRESIGNALBITS=0 0
+PRESIGNALHI=9024
+PRESIGNALLO=4557
+BITS=100010000001111000101111011110111
+[GeneralIRDesc_RepeatSignal]
+IRSEQUENCE=NEC
+Pause1=0
+Pause2=0
+Carrier=38
+BITLEN=563 563 0
+PRESIGNALBITS=0 0
+PRESIGNALHI=9029
+PRESIGNALLO=2273
+BITS=1
+[sat(on)-Idle]
+Commands=4096
+NewState=ON
+[standby-Idle]
+Commands=33536
+Timeout=20
+NewState=home
+[timeout-home]
+Commands=18819
+Timeout=20
+NewState=poweroff
+[timeout-poweroff]
+Commands=18688
+NewState=Idle
+[0-Idle]
+Timeout=0
+Commands=0
+NewState=-
+[0-ON]
+Timeout=0
+Commands=0
+NewState=-
+[standby-ON]
+Timeout=20
+Commands=33536
+NewState=home
+[key_release-ON]
+Timeout=0
+Commands=26880
+[up-ON]
+Timeout=0
+Commands=20480
+[down-ON]
+Timeout=0
+Commands=20480
+[rewind-ON]
+Timeout=0
+Commands=20480
+[wind-ON]
+Timeout=0
+Commands=20480
+[play(go)-ON]
+Timeout=0
+Commands=32768
+[stop-ON]
+Timeout=0
+Commands=4096
+[cont_rewind-ON]
+Timeout=0
+Commands=30720
+[cont_wind-ON]
+Timeout=0
+Commands=30720
+[cont_up-ON]
+Timeout=0
+Commands=30720
+[cont_down-ON]
+Timeout=0
+Commands=30720
+[exit-ON]
+Timeout=0
+Commands=4096
+[sat(on)-ON]
+Timeout=0
+Commands=4096
+[sense_on-Idle]
+NewState=ON
+Commands=0
+Timeout=0
+[sense_off-ON]
+NewState=Idle

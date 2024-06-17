@@ -1,0 +1,982 @@
+[Version]
+Date=09-05-08
+Time=11:49:19
+Person=BKF
+[General]
+GeneralIRDesc=GlobalManual
+PassVBI=1
+AlwaysOn=0
+IRTimeout=700
+Descriptor=Virgin V+      
+NumSignalReps=0
+Comment=
+Version=01,00a
+BitsPerPixel=1
+[States]
+NumStates=7
+State1=Idle
+Comment1=Waiting
+State2=GoingOn
+Comment2=GoingOn
+State3=On
+Comment3=On
+State4=GoExt
+Comment4=GoExt
+State5=GoExt2
+Comment5=GoExt2
+State6=Continue
+Comment6=-
+State7=BEO5
+Comment7=-
+[0-Idle]
+Commands=4864
+Timeout=30
+NewState=GoingOn
+[1-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[2-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[3-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[4-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[5-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[6-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[7-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[8-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[9-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[up-Idle]
+Commands=4096
+[down-Idle]
+Timeout=0
+Commands=4096
+[rewind-Idle]
+Timeout=0
+Commands=4096
+[wind-Idle]
+Timeout=0
+Commands=4096
+[play(go)-Idle]
+Timeout=0
+Commands=4096
+[stop-Idle]
+Timeout=0
+Commands=4096
+[exit-Idle]
+Timeout=0
+Commands=4096
+[shift+1-Idle]
+Timeout=0
+Commands=4096
+[shift+2-Idle]
+Timeout=0
+Commands=4096
+[shift+3-Idle]
+Timeout=0
+Commands=4096
+[shift+4-Idle]
+Timeout=0
+Commands=4096
+[shift+5-Idle]
+Timeout=0
+Commands=4096
+[shift+6-Idle]
+Timeout=0
+Commands=4096
+[shift+7-Idle]
+Timeout=0
+Commands=4096
+[shift+8-Idle]
+Timeout=0
+Commands=4096
+[shift+9-Idle]
+Timeout=0
+Commands=0
+[cue_forw-Idle]
+Timeout=0
+Commands=4096
+[cue_backw-Idle]
+Timeout=0
+Commands=4096
+[slow_forw-Idle]
+Timeout=0
+Commands=4096
+[slow_backw-Idle]
+Timeout=0
+Commands=4096
+[sat(on)-Idle]
+Timeout=30
+Commands=4864
+NewState=GoingOn
+[sense_on-Idle]
+NewState=On
+[timeout-GoingOn]
+Commands=24576
+NewState=On
+[0-GoingOn]
+Commands=20480
+[1-GoingOn]
+Timeout=0
+Commands=20480
+[2-GoingOn]
+Timeout=0
+Commands=20480
+[3-GoingOn]
+Timeout=0
+Commands=20480
+[4-GoingOn]
+Timeout=0
+Commands=20480
+[5-GoingOn]
+Timeout=0
+Commands=20480
+[6-GoingOn]
+Timeout=0
+Commands=20480
+[7-GoingOn]
+Timeout=0
+Commands=20480
+[8-GoingOn]
+Timeout=0
+Commands=20480
+[9-GoingOn]
+Timeout=0
+Commands=20480
+[standby-GoingOn]
+Commands=18192
+NewState=Idle
+[up-GoingOn]
+Timeout=0
+Commands=4096
+[down-GoingOn]
+Timeout=0
+Commands=4096
+[rewind-GoingOn]
+Timeout=0
+Commands=4096
+[wind-GoingOn]
+Timeout=0
+Commands=4096
+[play(go)-GoingOn]
+Timeout=0
+Commands=4096
+[stop-GoingOn]
+Timeout=0
+Commands=4096
+[exit-GoingOn]
+Timeout=0
+Commands=4096
+[shift+1-GoingOn]
+Timeout=0
+Commands=4096
+[shift+2-GoingOn]
+Timeout=0
+Commands=4096
+[shift+3-GoingOn]
+Timeout=0
+Commands=4096
+[shift+4-GoingOn]
+Timeout=0
+Commands=4096
+[shift+5-GoingOn]
+Timeout=0
+Commands=4096
+[shift+6-GoingOn]
+Timeout=0
+Commands=4096
+[shift+7-GoingOn]
+Timeout=0
+Commands=4096
+[shift+8-GoingOn]
+Timeout=0
+Commands=4096
+[shift+9-GoingOn]
+Timeout=0
+Commands=0
+[cue_forw-GoingOn]
+Timeout=0
+Commands=4096
+[cue_backw-GoingOn]
+Timeout=0
+Commands=4096
+[slow_forw-GoingOn]
+Timeout=0
+Commands=4096
+[slow_backw-GoingOn]
+Timeout=0
+Commands=4096
+[sense_off-GoingOn]
+Commands=18176
+NewState=Idle
+[0-On]
+Commands=4096
+[1-On]
+Timeout=0
+Commands=4096
+[2-On]
+Timeout=0
+Commands=4096
+[3-On]
+Timeout=0
+Commands=4096
+[4-On]
+Timeout=0
+Commands=4096
+[5-On]
+Timeout=0
+Commands=4096
+[6-On]
+Timeout=0
+Commands=4096
+[7-On]
+Timeout=0
+Commands=4096
+[8-On]
+Timeout=0
+Commands=4096
+[9-On]
+Timeout=0
+Commands=4096
+[standby-On]
+Timeout=0
+Commands=4096
+NewState=Idle
+[key_release-On]
+Commands=36864
+[up-On]
+Timeout=0
+Commands=4096
+[down-On]
+Timeout=0
+Commands=4096
+[rewind-On]
+Timeout=0
+Commands=4096
+[wind-On]
+Timeout=0
+Commands=4096
+[play(go)-On]
+Timeout=20
+Commands=12288
+NewState=GoExt
+[stop-On]
+Timeout=0
+Commands=4096
+[cont_rewind-On]
+Commands=32768
+[cont_wind-On]
+Timeout=0
+Commands=32768
+[cont_up-On]
+Timeout=0
+Commands=32768
+[cont_down-On]
+Timeout=0
+Commands=32768
+[continue-On]
+Timeout=0
+Commands=32768
+[exit-On]
+Timeout=0
+Commands=4096
+[shift+1-On]
+Timeout=0
+Commands=4096
+[shift+2-On]
+Timeout=0
+Commands=4096
+[shift+3-On]
+Timeout=0
+Commands=4096
+[shift+4-On]
+Timeout=0
+Commands=4096
+[shift+5-On]
+Timeout=0
+Commands=4096
+[shift+6-On]
+Timeout=0
+Commands=4096
+[shift+7-On]
+Timeout=0
+Commands=4096
+[shift+8-On]
+Timeout=0
+Commands=4096
+[shift+9-On]
+Timeout=0
+Commands=0
+[cue_forw-On]
+Timeout=0
+Commands=4096
+[cue_backw-On]
+Timeout=0
+Commands=4096
+[slow_forw-On]
+Timeout=0
+Commands=4096
+[slow_backw-On]
+Timeout=0
+Commands=4096
+[sense_off-On]
+NewState=Idle
+[timeout-GoExt]
+NewState=On
+Commands=8192
+AlienID1=Select
+[1-GoExt]
+Commands=16896
+NewState=On
+AlienID1=Home
+[2-GoExt]
+Timeout=0
+Commands=16896
+NewState=On
+AlienID1=Guide
+[3-GoExt]
+Timeout=0
+Commands=16896
+NewState=On
+AlienID1=Fav
+[4-GoExt]
+Timeout=0
+Commands=16896
+NewState=On
+AlienID1=Info
+[5-GoExt]
+Timeout=0
+Commands=16896
+NewState=On
+AlienID1=Text
+[6-GoExt]
+Timeout=0
+Commands=16896
+NewState=On
+AlienID1=Return
+[7-GoExt]
+Timeout=0
+Commands=16896
+NewState=On
+AlienID1=VPlus
+[8-GoExt]
+Timeout=0
+Commands=16896
+NewState=On
+AlienID1=Record
+[play(go)-GoExt]
+Commands=16896
+NewState=On
+AlienID1=PlayPause
+[stop-GoExt]
+Timeout=0
+Commands=16640
+NewState=On
+[exit-GoExt]
+Timeout=0
+Commands=16640
+NewState=On
+[timeout-GoExt2]
+NewState=On
+[timeout-Continue]
+NewState=On
+Commands=8192
+AlienID1=Guide
+[continue-GoExt]
+Commands=17152
+Timeout=15
+NewState=Continue
+[key_release-Continue]
+Commands=17152
+Timeout=20
+NewState=GoExt
+[sense_off-GoExt]
+Commands=16384
+NewState=Idle
+[sense_off-GoExt2]
+Timeout=0
+Commands=16384
+NewState=Idle
+[sense_off-Continue]
+Timeout=0
+Commands=16384
+NewState=Idle
+[shift+0-Idle]
+Timeout=10
+Commands=12288
+NewState=BEO5
+[shift+0-GoingOn]
+Timeout=10
+Commands=12288
+NewState=BEO5
+[shift+0-On]
+Timeout=10
+Commands=12288
+NewState=BEO5
+[shift+0-GoExt]
+Timeout=10
+Commands=12288
+NewState=BEO5
+[shift+0-GoExt2]
+Timeout=10
+Commands=12288
+NewState=BEO5
+[shift+0-Continue]
+Timeout=10
+Commands=12288
+NewState=BEO5
+[shift+0-BEO5]
+Timeout=10
+Commands=12288
+NewState=BEO5
+[timeout-BEO5]
+NewState=On
+[up-BEO5]
+NewState=On
+Timeout=15
+Commands=16896
+AlienID1=ChUp
+[down-BEO5]
+NewState=On
+Timeout=15
+Commands=16896
+AlienID1=ChDown
+[rewind-BEO5]
+NewState=On
+Timeout=15
+Commands=16896
+AlienID1=Rew
+[wind-BEO5]
+NewState=On
+Timeout=15
+Commands=16896
+AlienID1=FF
+[play(go)-BEO5]
+NewState=On
+Timeout=0
+Commands=16640
+[up-GoExt]
+Commands=16944
+Timeout=15
+NewState=GoExt2
+AlienID1=ChUp
+[down-GoExt]
+Timeout=15
+Commands=16944
+NewState=GoExt2
+AlienID1=ChDown
+[rewind-GoExt]
+Timeout=15
+Commands=16944
+NewState=GoExt2
+AlienID1=Rew
+[wind-GoExt]
+Timeout=15
+Commands=16944
+NewState=GoExt2
+AlienID1=FF
+[9-GoExt]
+Timeout=0
+Commands=0
+NewState=-
+[Signal_0]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89654
+Pause2=89654
+Carrier=36
+PARAM=0 10
+SPECINFO=Philips RC5: 0
+Comment=Philips RC5: 0
+[Signal_2]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89651
+Pause2=89654
+Carrier=36
+PARAM=2 10
+SPECINFO=Philips RC5: 2
+Comment=Philips RC5: 2
+[Signal_3]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88755
+Pause2=88758
+Carrier=36
+PARAM=3 10
+SPECINFO=Philips RC5: 3
+Comment=Philips RC5: 3
+[Signal_4]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89651
+Pause2=89654
+Carrier=36
+PARAM=4 10
+SPECINFO=Philips RC5: 4
+Comment=Philips RC5: 4
+[Signal_5]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88758
+Pause2=88758
+Carrier=36
+PARAM=5 10
+SPECINFO=Philips RC5: 5
+Comment=Philips RC5: 5
+[Signal_6]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89654
+Pause2=89651
+Carrier=36
+PARAM=6 10
+SPECINFO=Philips RC5: 6
+Comment=Philips RC5: 6
+[Signal_7]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88758
+Pause2=88758
+Carrier=36
+PARAM=7 10
+SPECINFO=Philips RC5: 7
+Comment=Philips RC5: 7
+[Signal_8]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89651
+Pause2=89651
+Carrier=36
+PARAM=8 10
+SPECINFO=Philips RC5: 8
+Comment=Philips RC5: 8
+[Signal_9]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88758
+Pause2=88758
+Carrier=36
+PARAM=9 10
+SPECINFO=Philips RC5: 9
+Comment=Philips RC5: 9
+[Signal_Power]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89651
+Pause2=89651
+Carrier=36
+PARAM=12 10
+SPECINFO=Philips RC5: standby
+Comment=Philips RC5: standby
+[Signal_Up]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89654
+Pause2=89654
+Carrier=36
+PARAM=80 10
+SPECINFO=Philips RC5: Cursor Up
+Comment=Philips RC5: Cursor Up
+[Signal_Down]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88760
+Pause2=88760
+Carrier=36
+PARAM=81 10
+SPECINFO=Philips RC5: Cursor Down
+Comment=Philips RC5: Cursor Down
+[Signal_Left]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88758
+Pause2=88758
+Carrier=36
+PARAM=85 10
+SPECINFO=Philips RC5: Cursor Left
+Comment=Philips RC5: Cursor Left
+[Signal_Right]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89651
+Pause2=89651
+Carrier=36
+PARAM=86 10
+SPECINFO=Philips RC5: Cursor Right
+Comment=Philips RC5: Cursor Right
+[Signal_Select]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88760
+Pause2=88760
+Carrier=36
+PARAM=87 10
+SPECINFO=Philips RC5: Menu Function
+Comment=Philips RC5: Menu Function
+[AlienSignals]
+NumStates=37
+Signal1=0
+Signal2=1
+Signal3=2
+Signal4=3
+Signal5=4
+Signal6=5
+Signal7=6
+Signal8=7
+Signal9=8
+Signal10=9
+Signal11=Power
+Signal12=Up
+Signal13=Down
+Signal14=Left
+Signal15=Right
+Signal16=Select
+Signal17=Return
+Signal18=Rew
+Signal19=FF
+Signal20=Stop
+Signal21=PlayPause
+Signal22=Record
+Signal23=VPlus
+Signal24=Fav
+Signal25=Guide
+Signal26=Info
+Signal27=ChUp
+Signal28=ChDown
+Signal29=Back2
+Signal30=Home
+Signal31=TV
+Signal32=Red
+Signal33=Green
+Signal34=Yellow
+Signal35=Blue
+Signal36=Help
+Signal37=Text
+[Associations]
+BeoButton1=0
+AlienButton1=0
+LineSpacing1=2
+BeoButton2=1
+AlienButton2=1
+LineSpacing2=2
+BeoButton3=2
+AlienButton3=2
+LineSpacing3=2
+BeoButton4=3
+AlienButton4=3
+LineSpacing4=2
+BeoButton5=4
+AlienButton5=4
+LineSpacing5=2
+BeoButton6=5
+AlienButton6=5
+LineSpacing6=2
+BeoButton7=6
+AlienButton7=6
+LineSpacing7=2
+BeoButton8=7
+AlienButton8=7
+LineSpacing8=2
+BeoButton9=8
+AlienButton9=8
+LineSpacing9=2
+BeoButton10=9
+AlienButton10=9
+LineSpacing10=2
+BeoButton11=standby
+AlienButton11=Power
+LineSpacing11=2
+BeoButton12=up
+AlienButton12=Up
+LineSpacing12=2
+BeoButton13=down
+AlienButton13=Down
+LineSpacing13=2
+BeoButton14=rewind
+AlienButton14=Left
+LineSpacing14=2
+BeoButton15=wind
+AlienButton15=Right
+LineSpacing15=2
+BeoButton16=play(go)
+AlienButton16=Select
+LineSpacing16=2
+BeoButton17=stop
+AlienButton17=Stop
+LineSpacing17=2
+BeoButton18=cont_rewind
+AlienButton18=Left
+LineSpacing18=2
+BeoButton19=cont_wind
+AlienButton19=Right
+LineSpacing19=2
+BeoButton20=cont_up
+AlienButton20=Up
+LineSpacing20=2
+BeoButton21=cont_down
+AlienButton21=Down
+LineSpacing21=2
+BeoButton22=continue
+AlienButton22=Select
+LineSpacing22=2
+BeoButton23=exit
+AlienButton23=Back2
+LineSpacing23=2
+BeoButton29=sat(on)
+AlienButton29=Power
+LineSpacing29=2
+BeoButton25=cue_forw
+AlienButton25=Yellow
+LineSpacing25=2
+Text25=YELLOW
+BeoButton26=cue_backw
+AlienButton26=Green
+LineSpacing26=2
+Text26=GREEN
+BeoButton27=slow_forw
+AlienButton27=Blue
+LineSpacing27=2
+Text27=BLUE
+BeoButton24=shift+8
+AlienButton24=Record
+LineSpacing24=2
+Text24=RECORD
+BeoButton30=shift+7
+AlienButton30=VPlus
+LineSpacing30=2
+Text30=V+
+BeoButton32=shift+5
+AlienButton32=Text
+LineSpacing32=2
+Text32=TEXT
+BeoButton31=shift+6
+AlienButton31=Return
+LineSpacing31=2
+Text31=SKIP BACK
+BeoButton33=shift+1
+AlienButton33=Home
+LineSpacing33=2
+Text33=HOME
+BeoButton34=shift+2
+AlienButton34=Guide
+LineSpacing34=2
+Text34=GUIDE
+BeoButton35=shift+3
+AlienButton35=Fav
+LineSpacing35=2
+Text35=FAV
+BeoButton36=shift+4
+AlienButton36=Info
+LineSpacing36=2
+Text36=INFO
+BeoButton28=slow_backw
+AlienButton28=Red
+LineSpacing28=2
+Text28=RED
+[Signal_Return]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89654
+Pause2=89654
+Carrier=36
+PARAM=40 10
+SPECINFO=Philips RC5: RF Sw/PIP sel
+Comment=Philips RC5: RF Sw/PIP sel
+[Signal_Rew]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89651
+Pause2=89654
+Carrier=36
+PARAM=50 10
+SPECINFO=Philips RC5: Rewind
+Comment=Philips RC5: Rewind
+[Signal_FF]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89654
+Pause2=89654
+Carrier=36
+PARAM=52 10
+SPECINFO=Philips RC5: Wind
+Comment=Philips RC5: Wind
+[Signal_Stop]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89654
+Pause2=89654
+Carrier=36
+PARAM=54 10
+SPECINFO=Philips RC5: Stop
+Comment=Philips RC5: Stop
+[Signal_PlayPause]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89654
+Pause2=89654
+Carrier=36
+PARAM=48 10
+SPECINFO=Philips RC5: Pause
+Comment=Philips RC5: Pause
+[Signal_Record]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88760
+Pause2=88760
+Carrier=36
+PARAM=55 10
+SPECINFO=Philips RC5: Recording
+Comment=Philips RC5: Recording
+[Signal_VPlus]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88758
+Pause2=88758
+Carrier=36
+PARAM=65 10
+SPECINFO=Philips RC5: Balance Front
+Comment=Philips RC5: Balance Front
+[Signal_Fav]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88760
+Pause2=88760
+Carrier=36
+PARAM=97 10
+SPECINFO=Philips RC5: Solarization
+Comment=Philips RC5: Solarization
+[Signal_Guide]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89654
+Pause2=89654
+Carrier=36
+PARAM=82 10
+SPECINFO=Philips RC5: Menu on
+Comment=Philips RC5: Menu on
+[Signal_Info]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88760
+Pause2=88758
+Carrier=36
+PARAM=47 10
+SPECINFO=Philips RC5: Shift
+Comment=Philips RC5: Shift
+[Signal_ChUp]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89654
+Pause2=89654
+Carrier=36
+PARAM=32 10
+SPECINFO=Philips RC5: Chn/Prog +
+Comment=Philips RC5: Chn/Prog +
+[Signal_ChDown]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88758
+Pause2=88760
+Carrier=36
+PARAM=33 10
+SPECINFO=Philips RC5: Chn/Prog -
+Comment=Philips RC5: Chn/Prog -
+[Signal_Back2]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89654
+Pause2=89654
+Carrier=36
+PARAM=34 10
+SPECINFO=Philips RC5: Alt/Channel
+Comment=Philips RC5: Alt/Channel
+[Signal_Home]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88755
+Pause2=88758
+Carrier=36
+PARAM=79 10
+SPECINFO=Philips RC5: Sound/Menu func
+Comment=Philips RC5: Sound/Menu func
+[Signal_TV]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88755
+Pause2=88755
+Carrier=36
+PARAM=83 10
+SPECINFO=Philips RC5: Menu off
+Comment=Philips RC5: Menu off
+[Signal_Red]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88755
+Pause2=88755
+Carrier=36
+PARAM=107 10
+SPECINFO=Philips RC5: RED
+Comment=Philips RC5: RED
+[Signal_Green]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89651
+Pause2=89651
+Carrier=36
+PARAM=108 10
+SPECINFO=Philips RC5: GREEN
+Comment=Philips RC5: GREEN
+[Signal_Yellow]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88758
+Pause2=88755
+Carrier=36
+PARAM=109 10
+SPECINFO=Philips RC5: YELLOW
+Comment=Philips RC5: YELLOW
+[Signal_Blue]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89651
+Pause2=89651
+Carrier=36
+PARAM=110 10
+SPECINFO=Philips RC5: CYAN
+Comment=Philips RC5: CYAN
+[Signal_Help]
+IRSEQUENCE=PHILIPSRC5
+Pause1=88758
+Pause2=88755
+Carrier=36
+PARAM=15 10
+SPECINFO=Philips RC5: Display
+Comment=Philips RC5: Display
+[Signal_Text]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89654
+Pause2=89651
+Carrier=36
+PARAM=60 10
+SPECINFO=Philips RC5: TXT
+Comment=Philips RC5: TXT
+[Signal_1]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89654
+Pause2=89654
+Carrier=36
+PARAM=1 10
+SPECINFO=Philips RC5: 1
+Comment=Philips RC5: 1
+[GeneralIRDesc]
+IRSEQUENCE=PHILIPSRC5
+Pause1=89654
+Pause2=89654
+Carrier=36
+PARAM=0 10
+SPECINFO=Philips RC5: 0
+[up-GoExt2]
+Timeout=15
+Commands=16944
+AlienID1=ChUp
+[down-GoExt2]
+Timeout=15
+Commands=16944
+AlienID1=ChDown
+[rewind-GoExt2]
+Timeout=15
+Commands=16944
+AlienID1=Rew
+[wind-GoExt2]
+Timeout=15
+Commands=16944
+AlienID1=FF
