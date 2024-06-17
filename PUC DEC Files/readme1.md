@@ -177,21 +177,20 @@ Comment=RAW FlankList:71 flanks
 - **NumFlanks:** Number of pulse transitions.
 - **FlankListX:** Lists of pulse durations in hexadecimal.
 
-
 ## Detailed Explanation of Sections
-Header Section
+**Header Section**
 
 The header sets the context for the DEC file. It is crucial for identifying the purpose and origin of the file.
 
-Associations Section
+**Associations Section**
 
 This section is pivotal for mapping the remote control's buttons to the corresponding functions on the target device. This mapping ensures that pressing a button on the remote sends the correct signal to the device.
 
-AlienSignals Section
+**AlienSignals Section**
 
 The AlienSignals section is used to declare all the possible signals that the remote can send to control the device. It acts as a reference list for the signal definitions provided later in the file.
 
-Signal Definitions Section
+**Signal Definitions Section**
 
 The signal definitions are the core of the DEC file. They define how each button press translates into an IR signal. This section can vary significantly based on the IR protocol used (NEC, RAW, etc.). Understanding the specifics of each protocol is essential for accurate signal definition.
 
