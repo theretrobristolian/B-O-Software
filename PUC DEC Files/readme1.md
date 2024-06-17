@@ -81,11 +81,10 @@ The Header section contains metadata about the DEC file. This includes the devic
   Name=Device Name
   Version=File Version
   Author=Author Name
-
-#
-Name: The name of the device this DEC file is meant to control.
-Version: The version of the DEC file.
-Author: The author of the DEC file.
+```
+- **Name:** The name of the device this DEC file is meant to control.
+- **Version:** The version of the DEC file.
+- **Author:** The author of the DEC file.
 2. Associations Section
 
 The Associations section maps the buttons on the Beo4 remote to the functions on the target device. Each mapping defines which button on the remote corresponds to which command on the controlled device.
