@@ -62,7 +62,8 @@ This setup updates the internal PUC tables, allowing the B&O system to control t
 
 3. **Controlling Devices:** Once programmed, the B&O system can control third-party devices via IR blasters, effectively turning the B&O remote into a universal controller.
 
-##Structure of a DEC File
+## Structure of a DEC File
+
 
 
 #
