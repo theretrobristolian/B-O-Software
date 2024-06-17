@@ -85,14 +85,13 @@ The Header section contains metadata about the DEC file. This includes the devic
 - **Name:** The name of the device this DEC file is meant to control.
 - **Version:** The version of the DEC file.
 - **Author:** The author of the DEC file.
-2. Associations Section
+
+### 2. Associations Section
 
 The Associations section maps the buttons on the Beo4 remote to the functions on the target device. Each mapping defines which button on the remote corresponds to which command on the controlled device.
 
 Example:
-
-ini
-Copy code
+```plaintext
 [Associations]
 BeoButton1=up
 AlienButton1=Up
@@ -108,10 +107,12 @@ AlienButton4=Right
 LineSpacing4=2
 BeoButton5=play(go)
 AlienButton5=Select
-BeoButtonX: The button on the Beo4 remote.
-AlienButtonX: The function or command on the target device.
-LineSpacingX: Defines the visual arrangement in the configuration file.
-3. AlienSignals Section
+```
+- **BeoButtonX:** The button on the Beo4 remote.
+- **AlienButtonX:** The function or command on the target device.
+- **LineSpacingX:** Defines the visual arrangement in the configuration file.
+
+### 3. AlienSignals Section
 
 The AlienSignals section lists the various signals that the DEC file will use to control the external device. Each signal corresponds to a specific function, and this section details the number of states and the signal names.
 
