@@ -149,19 +149,18 @@ BITS=100010000001111010111111011110111
 REPEATSIGNAL=1
 Comment=NEC 32bits=881EBF7B
 ```
-IRSEQUENCE: Indicates the protocol format (e.g., NEC, RAW).
-Pause1 and Pause2: Delays between signals.
-Carrier: Carrier frequency in kHz.
-BITLEN: Lengths of bits in the signal.
-PRESIGNALBITS: Bits sent before the main signal.
-PRESIGNALHI and PRESIGNALLO: High and low durations for the pre-signal.
-BITS: The binary sequence of the IR signal.
-REPEATSIGNAL: Indicates if the signal should repeat.
-Comment: Additional comments, often including the 32-bit hex representation of the signal.
-RAW Example:
+- **IRSEQUENCE:** Indicates the protocol format (e.g., NEC, RAW).
+- **Pause1 and Pause2:** Delays between signals.
+- **Carrier:** Carrier frequency in kHz.
+- **BITLEN:** Lengths of bits in the signal.
+- **PRESIGNALBITS:** Bits sent before the main signal.
+- **PRESIGNALHI and PRESIGNALLO:** High and low durations for the pre-signal.
+- **BITS:** The binary sequence of the IR signal.
+- **REPEATSIGNAL:** Indicates if the signal should repeat.
+- **Comment:** Additional comments, often including the 32-bit hex representation of the signal.
 
-ini
-Copy code
+RAW Example:
+```plaintext
 [Signal_Menu]
 IRSEQUENCE=RAW
 Pause1=97636
@@ -171,12 +170,15 @@ NumFlanks=71
 FlankList1=$00A1,$34C5,$00A9,$03EE,$008D,$0871,$00A6,$0857,$008D,$0871,$00A9,$03EE
 ...
 Comment=RAW FlankList:71 flanks
-IRSEQUENCE: Indicates the protocol format, here it's RAW.
-Pause1 and Pause2: Delays between signals.
-Carrier: Carrier frequency in kHz.
-NumFlanks: Number of pulse transitions.
-FlankListX: Lists of pulse durations in hexadecimal.
-Detailed Explanation of Sections
+```
+- **IRSEQUENCE:** Indicates the protocol format, here it's RAW.
+- **Pause1 and Pause2:** Delays between signals.
+- **Carrier:** Carrier frequency in kHz.
+- **NumFlanks:** Number of pulse transitions.
+- **FlankListX:** Lists of pulse durations in hexadecimal.
+
+
+## Detailed Explanation of Sections
 Header Section
 
 The header sets the context for the DEC file. It is crucial for identifying the purpose and origin of the file.
