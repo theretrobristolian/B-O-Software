@@ -117,9 +117,7 @@ AlienButton5=Select
 The AlienSignals section lists the various signals that the DEC file will use to control the external device. Each signal corresponds to a specific function, and this section details the number of states and the signal names.
 
 Example:
-
-ini
-Copy code
+```plaintext
 [AlienSignals]
 NumStates=7
 Signal1=Up
@@ -129,17 +127,16 @@ Signal4=Right
 Signal5=Select
 Signal6=Menu
 Signal7=PlayPause
-NumStates: Total number of different signals defined.
-SignalX: The name of each signal, corresponding to a function on the device.
-4. Signal Definitions Section
+```
+- **NumStates:** Total number of different signals defined.
+- S**ignalX:** The name of each signal, corresponding to a function on the device.
+
+### 4. Signal Definitions Section
 
 The Signal Definitions section provides the detailed IR signal instructions for each button. This section can use various IR protocols (e.g., NEC, RAW) to define the signals.
 
 NEC Example:
-
-ini
-Copy code
-[Signal_Menu]
+```plaintext
 IRSEQUENCE=NEC
 Pause1=42040
 Pause2=96558
@@ -151,6 +148,7 @@ PRESIGNALLO=4554
 BITS=100010000001111010111111011110111
 REPEATSIGNAL=1
 Comment=NEC 32bits=881EBF7B
+```
 IRSEQUENCE: Indicates the protocol format (e.g., NEC, RAW).
 Pause1 and Pause2: Delays between signals.
 Carrier: Carrier frequency in kHz.
