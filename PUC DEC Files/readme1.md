@@ -43,8 +43,26 @@ This section provides an overview of the top 6 IR code protocols used in 3rd par
 - **Example Code**:
   ```plaintext
   RAW_UP_ARROW {9000, 4500, 560, 560, 560, 560, 560, 1690
-#
-  dd
+## What is a DEC File?
+A DEC file is a configuration file that provides instructions for generating and decoding infrared (IR) signals for different buttons on a remote control. These files enable B&O devices to communicate with a wide range of external electronics via IR blasters.
 
-  ddd
-  all
+### The Bigger Picture: DEC Files in Context
+DEC files are utilized in conjunction with B&O's Service Tool Mk2+ software and specialized hardware to program B&O systems like the BeoSystem 3. This process involves:
+
+1. Using a USB to Serial adapter.
+2. Connecting a special B&O serial cable containing a conversion chip.
+3. Linking to a Masterlink pigtail cable that interfaces with the B&O system.
+
+This setup updates the internal PUC tables, allowing the B&O system to control third-party devices effectively.
+
+### Practical Application: Using DEC Files
+1. **Creating DEC Files:** Users can create or modify DEC files to include specific IR commands for their devices. This involves defining metadata, mapping remote buttons to device functions, and specifying the IR signal for each button.
+
+2. **Programming B&O Systems:** With the DEC file ready, it is loaded into the B&O system using the Service Tool Mk2+. The system is then capable of sending the appropriate IR signals to control external devices.
+
+3. **Controlling Devices:** Once programmed, the B&O system can control third-party devices via IR blasters, effectively turning the B&O remote into a universal controller.
+
+##Structure of a DEC File
+
+
+#
